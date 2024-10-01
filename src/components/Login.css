@@ -1,0 +1,72 @@
+/* Login.css */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full height untuk vertikal tengah */
+    background-color: #f0f8ff; /* Warna latar belakang */
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 300px; /* Lebar form untuk desktop */
+  }
+  
+  label, input {
+    margin: 10px 0; /* Jarak antar elemen */
+    font-size: 16px; /* Ukuran font default */
+  }
+  
+  input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px; /* Membuat sudut input lebih halus */
+  }
+  
+  button {
+    padding: 10px; /* Padding untuk tombol */
+    background-color: #007BFF; /* Warna tombol */
+    color: white; /* Warna teks pada tombol */
+    border: none; /* Menghilangkan border tombol */
+    cursor: pointer;
+    border-radius: 4px; /* Membuat tombol lebih halus */
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Warna tombol saat dihover */
+  }
+  
+  /* Media query untuk perangkat lebih kecil */
+  @media (max-width: 768px) {
+    form {
+      width: 90%; /* Lebar form disesuaikan untuk tablet atau layar lebih kecil */
+    }
+  
+    button {
+      font-size: 14px; /* Ukuran font lebih kecil untuk tombol */
+      padding: 8px; /* Padding tombol lebih kecil */
+    }
+  }
+  
+  /* Media query untuk perangkat ponsel */
+  @media (max-width: 480px) {
+    .login-container {
+      padding: 20px; /* Memberi sedikit padding untuk ponsel */
+    }
+  
+    form {
+      width: 100%; /* Form menyesuaikan lebar layar ponsel */
+    }
+  
+    label, input {
+      font-size: 14px; /* Ukuran font lebih kecil */
+    }
+  
+    button {
+      font-size: 12px; /* Ukuran font lebih kecil untuk tombol */
+      padding: 6px; /* Padding tombol lebih kecil */
+    }
+  }
+  

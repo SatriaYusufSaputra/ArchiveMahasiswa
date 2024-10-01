@@ -1,0 +1,40 @@
+/* Dashboard.css */
+.dashboard-container {
+  display: flex; /* Flexbox untuk membagi tampilan */
+}
+
+.dashboard-content {
+  margin-left: 250px; /* Beri margin sebesar lebar sidebar (250px) */
+  padding: 20px;
+  width: calc(100% - 250px); /* Kurangi lebar sidebar dari lebar total */
+}
+
+.form-grid {
+  display: grid; /* Gunakan grid layout */
+  grid-template-columns: repeat(2, 1fr); /* Dua kolom dengan lebar yang sama */
+  gap: 20px; /* Jarak antara input kolom */
+}
+
+.form-group {
+  display: flex; /* Flexbox untuk form group */
+  flex-direction: column; /* Arahkan input ke bawah */
+}
+
+/* Memberi padding pada input untuk jarak kanan-kiri */
+form input {
+  padding: 10px;
+  width: calc(100% - 20px); /* Mengurangi lebar input untuk padding */
+  margin-bottom: 10px; /* Tambahkan margin bawah untuk jarak antar input */
+}
+
+/* Menambah padding pada tombol untuk jarak */
+form button {
+  grid-column: span 2; /* Tombol submit membentang di dua kolom */
+  margin-top: 10px;
+  padding: 10px 20px;
+}
+
+/* Menambah margin kanan-kiri pada konten form */
+.dashboard-content {
+  padding: 20px; /* Tambahkan padding untuk jarak kanan-kiri */
+}

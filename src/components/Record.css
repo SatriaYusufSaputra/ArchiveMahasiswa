@@ -1,0 +1,94 @@
+/* Record.css */
+.record-container {
+  display: flex; /* Menggunakan flexbox untuk layout */
+}
+
+.sidebar {
+  width: 250px; /* Lebar default sidebar */
+  background-color: #2c3e50;
+  color: white;
+  padding: 20px;
+  height: 100vh; /* Full height */
+  position: fixed; /* Memastikan sidebar tetap di posisi tetap */
+  left: 0; /* Menempel di sisi kiri */
+  top: 0; /* Menempel di atas */
+}
+
+.record-content {
+  flex-grow: 1; /* Konten akan mengambil sisa ruang yang ada */
+  padding: 20px;
+  margin-left: 250px; /* Offset untuk sidebar */
+  height: 100vh; /* Full height */
+  overflow-y: auto; /* Tambahkan scroll jika konten melebihi tinggi layar */
+}
+
+.record-content h1 {
+  margin-bottom: 20px;
+}
+
+/* Pencarian */
+.search-container {
+  display: flex;
+  justify-content: flex-end; /* Untuk merapatkan pencarian ke kanan */
+  margin-bottom: 20px;
+}
+
+.search-input {
+  padding: 10px;
+  font-size: 16px;
+  width: 300px; /* Lebar input pencarian */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+table {
+  width: 100%; /* Tabel mengambil lebar penuh */
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid #ddd; /* Border untuk tabel */
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2; /* Warna latar untuk header tabel */
+}
+
+tr:hover {
+  background-color: #f1f1f1; /* Efek hover pada baris tabel */
+}
+
+/* Media Queries untuk responsivitas */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 200px; /* Lebar sidebar untuk tablet */
+  }
+
+  .record-content {
+    margin-left: 200px; /* Offset disesuaikan untuk tablet */
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar {
+    width: 100px; /* Lebar sidebar untuk ponsel */
+  }
+
+  .record-content {
+    margin-left: 100px; /* Offset disesuaikan untuk ponsel */
+    padding: 10px; /* Padding lebih kecil untuk konten */
+  }
+
+  .record-content h1 {
+    font-size: 18px; /* Ukuran font lebih kecil */
+  }
+
+  table, th, td {
+    font-size: 14px; /* Ukuran font tabel lebih kecil */
+  }
+}

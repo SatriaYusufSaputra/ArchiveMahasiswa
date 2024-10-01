@@ -1,0 +1,74 @@
+/* Mengatur keseluruhan tampilan halaman */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #1E3A8A, #60A5FA); /* Gradasi dari biru tua ke biru muda */
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.8); /* Warna latar belakang semi-transparan */
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #1E3A8A; /* Warna teks biru tua */
+  font-size: 24px;
+}
+
+input[type="text"], input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #1E3A8A; /* Border biru tua */
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #1E3A8A; /* Biru tua */
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #60A5FA; /* Biru muda saat di-hover */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Style untuk input dashboard */
+input[type="text"] {
+  background-color: #f0f9ff;
+  outline: none;
+}
+
+/* Membuat form lebih rapi */
+input::placeholder {
+  color: #1E3A8A; /* Placeholder biru tua */
+  font-style: italic;
+}
+
+input:focus {
+  border-color: #60A5FA; /* Fokus pada input dengan warna biru muda */
+  box-shadow: 0 0 5px #60A5FA;
+}
